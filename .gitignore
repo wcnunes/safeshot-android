@@ -1,0 +1,21 @@
+# Arquivos e pastas locais
+/local.properties
+/.idea/
+*.iml
+.DS_Store
+
+# Pastas de build
+/build/
+/app/build/
+
+# Outros arquivos temporários
+*.log
+*.tmp
+
+# Gradle
+/.gradle/
+
+# Arquivos de cache
+/captures/
+.externalNativeBuild/
+.cxx/ 

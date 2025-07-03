@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvPrivacyNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para máxima privacidade, sempre compartilhe suas fotos para o SafeShot antes de enviar para outras pessoas.\n\nPor limitações do Android, a automação total não é possível em versões recentes. Use o botão de compartilhar da galeria para enviar a foto ao SafeShot e limpar os metadados rapidamente."
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:background="#FFF3E0"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <Switch
+                android:id="@+id/switchAutoClean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remover metadados automaticamente ao tirar foto pelo SafeShot"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <Switch
+                android:id="@+id/switchAutoCleanCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remover metadados de fotos tiradas pela câmera nativa"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tirar Foto" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar da Galeria"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvOriginalMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metadados Originais"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imageViewOriginal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:background="#EEE" />
+
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remover Metadados"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvCleanMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metadados Limpos"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imageViewClean"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:background="#EEE" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compartilhar Imagem Limpa"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView> 
